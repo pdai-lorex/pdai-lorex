@@ -1,1 +1,0 @@
-# pdai-lorex.github.io
