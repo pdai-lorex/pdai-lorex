@@ -10,9 +10,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="//pdai-lorex.github.io/flircss/fx-blank.css" type="text/css" />
 
-<script type='text/javascript' src='FLIR.webpss-3.1.2.77.min.js'></script>
+<script type='text/javascript' src='FLIR.webpss-3.1.2.78.min.js'></script>
 
 
+    <script type="text/javascript">
+        function hasItem(sKey) {
+            return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
+        }
+        
+        var isUAT = window.location.host.indexOf("uat") > -1
+                 || window.location.host.indexOf("localhost") > -1
+                 || window.location.host.indexOf("int-web") > -1;
+
+        if (!hasItem("fcsid_env")) {
+            document.cookie = "fcsid_env=" + (isUAT ? "uat": "") + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+        }
+
+        if (!hasItem("fcsid_refresh")) {
+            var path = isUAT ? "uat11" : "pdai";
+            window.location.href = window.location.href;
+        }
+    </script>
 </head>
 
 <body>
