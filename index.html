@@ -18,17 +18,18 @@
             return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
         }
         
-        var isUAT = window.location.host.indexOf("uat") > -1
-                 || window.location.host.indexOf("localhost") > -1
-                 || window.location.host.indexOf("int-web") > -1;
+        if(false){
+            var isUAT = window.location.host.indexOf("uat") > -1
+                    || window.location.host.indexOf("localhost") > -1
+                    || window.location.host.indexOf("int-web") > -1;
+            if (!hasItem("fcsid_env")) {
+                document.cookie = "fcsid_env=" + (isUAT ? "uat": "") + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+            }
 
-        if (!hasItem("fcsid_env")) {
-            document.cookie = "fcsid_env=" + (isUAT ? "uat": "") + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
-        }
-
-        if (!hasItem("fcsid_refresh")) {
-            var path = isUAT ? "uat11" : "pdai";
-            window.location.href = window.location.href;
+            if (!hasItem("fcsid_refresh")) {
+                var path = isUAT ? "uat11" : "pdai";
+                window.location.href = window.location.href;
+            }
         }
     </script>
 </head>
@@ -43,6 +44,7 @@
                     <div ng-if="inLogInProccess" class="page-spinner-container">
                         <div class="f-spinner"></div>
                     </div>
+                    <h3>This is from index.html</h3>
                     <div ng-if="!inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}">
                         <div class="env-banner" ng-if="showEnv" ng-cloak>{{env | uppercase}}</div>
                         <div ui-view="login-view" ng-show="isLoginPage()"></div>
