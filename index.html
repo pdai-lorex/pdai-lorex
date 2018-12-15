@@ -18,16 +18,7 @@
         .webpss-style, .login-page, .login-inputs-container, input[type=email], input[type=password], input {
             background-color:ffffff; fload:left; width:480px;
         }
-        #loginPage .chkoutLoginRight input, #loginPage .chkoutLoginRight {
-            width: 600px;
-            float: left;
-            font-size: 15px;
-            margin-bottom: 10px;
-            margin-right: 12px;
-            padding: 5px;
-            width: 66em;
-            clear: both;
-        }
+        
         .form-control.ng-pristine.ng-untouched.ng-isolate-scope.ng-empty.ng-valid-email.ng-invalid.ng-invalid-required {
             width:310px;
         }
@@ -73,7 +64,7 @@
                     <div ng-if="inLogInProccess" class="page-spinner-container">
                         <div class="f-spinner"></div>
                     </div>
-                    <h3>This is from https://www.lorexsecure.com.(0001) </h3>
+                    <h3>This is from https://www.lorexsecure.com.(0002) </h3>
                     <!--div ng-if="inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}"-->
                         <div class="env-banner" ng-if="showEnv" ng-cloak>{{env | uppercase}}</div>
                         <div ui-view="login-view" ng-show="isLoginPage()"></div>
