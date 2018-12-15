@@ -15,7 +15,7 @@
         .text-center { background-color: lightgreen; margin: 20px;}
         div {margin:40px;}
         input.btn-login {font-color: red;}
-        .webpss-style, .login-page, .login-inputs-container, input[type=email], input[type=password], input {
+        input[type=email], input[type=password], input {
             background-color:ffffff; fload:left; width:480px;
         }
         
@@ -64,7 +64,7 @@
                     <div ng-if="inLogInProccess" class="page-spinner-container">
                         <div class="f-spinner"></div>
                     </div>
-                    <h3>This is from https://www.lorexsecure.com.(0002) </h3>
+                    <h3>This is from https://www.lorexsecure.com.(0003) </h3>
                     <!--div ng-if="inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}"-->
                         <div class="env-banner" ng-if="showEnv" ng-cloak>{{env | uppercase}}</div>
                         <div ui-view="login-view" ng-show="isLoginPage()"></div>
