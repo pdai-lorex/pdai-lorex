@@ -8,28 +8,37 @@
     <title>FLIR Secure Video Player</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- <style> 
+    <!-- <link rel="stylesheet" href="//pdai-lorex.github.io/flircss/fx-blank.css" type="text/css" /> -->
+
+    <style> 
         .btn, .btn-login {background-color: powderblue;}
-        .text-center { background-color: lightgreen; width: 200px;}
+        .text-center { background-color: lightgreen; margin: 20px;}
         div {margin:40px;}
         input.btn-login {font-color: red;}
-        input[type=email], input[type=password], input {
-            color: darkblue;
-            background-color:ffffff; fload:left; width:auto;
+        .webpss-style, .login-page, .login-inputs-container, input[type=email], input[type=password], input {
+            background-color:ffffff; fload:left; width:480px;
         }
-            
-        .form-control.ng-pristine.ng-untouched.ng-isolate-scope.ng-empty.ng-valid-email.ng-invalid.select {
+        #loginPage .chkoutLoginRight input, #loginPage .chkoutLoginRight {
+            width: 600px;
+            float: left;
+            font-size: 15px;
+            margin-bottom: 10px;
+            margin-right: 12px;
+            padding: 5px;
+            width: 66em;
+            clear: both;
+        }
+        .form-control.ng-pristine.ng-untouched.ng-isolate-scope.ng-empty.ng-valid-email.ng-invalid.ng-invalid-required {
             width:310px;
         }
-        .form-control.ng-pristine.ng-untouched.ng-isolate-scope.ng-empty.ng-invalid{
+        .form-control.ng-pristine.ng-untouched.ng-isolate-scope.ng-empty.ng-invalid.ng-invalid-required{
             width:320px;
         }
-        .form-control.ng-pristine.ng-isolate-scope.ng-empty.ng-valid-email.ng-invalid{
+        .form-control.ng-pristine.ng-isolate-scope.ng-empty.ng-valid-email.ng-invalid.ng-invalid-required.ng-touched{
             width:330px;
         }
         img {height:110px;}
-    </style> -->
+    </style>
     <script type='text/javascript' src='FLIR.webpss-3.1.2.78.min.js'></script>
 
 
@@ -67,7 +76,7 @@
                     <h3>This is from index.html</h3>
                     <!--div ng-if="inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}"-->
                         <div class="env-banner" ng-if="showEnv" ng-cloak>{{env | uppercase}}</div>
-                        <!-- div ui-view="login-view" ng-show="isLoginPage()"></div -->
+                        <div ui-view="login-view" ng-show="isLoginPage()"></div>
                         <div ui-view="main" ng-show="isMain()"></div>
                         <div ui-view="errors-view" ng-show="isErrorPage()"></div>
                     </div>
