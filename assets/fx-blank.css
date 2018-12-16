@@ -1,5 +1,10 @@
+div#supportMainbar {
+    width: 80%;
+    height: 80%;
+}
+
 div#bodyContainer {
-    width: auto;
+    width: 300px;
     height: 400px;
 }
 div.form-error.text-left {
@@ -7,7 +12,7 @@ div.form-error.text-left {
     width: 30px
 }
 div.col-xs-12.login-inputs-container,.ng-scope {
-    width: 100%;
+    width: 80%;
     padding: 2px 2px;
     margin: 3px 0;
     display: inline-block;
