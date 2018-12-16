@@ -11,7 +11,7 @@ div, div.col-xs-12.login-inputs-container,.ng-scope {
 
 input[type=email], select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 2px 2px;
     margin-left: 10%;
     margin: 8px 0;
     display: inline-block;
@@ -58,6 +58,6 @@ input[type=text], select {
   div {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 2px;
   }
   
