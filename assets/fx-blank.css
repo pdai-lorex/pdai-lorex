@@ -12,11 +12,12 @@ div#bodyContainer {
     width: 300px;
     height: 400px;
 }
-*/
+
 div.form-error.text-left {
     height: 80%;
     width: 70%;
 }
+*/
 div.col-xs-12.login-inputs-container,.ng-scope {
     width: 80%;
     padding: 2px 2px;
