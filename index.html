@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="//pdai-lorex.github.io/flircss/fx-blank.css" type="text/css" /> -->
     <link rel="stylesheet" href="./assets/myBlank.css" type="text/css" />
 
-    <h2>This is from the header of index.html (034)</h2>
+    <h2>This is from the header of index.html (035)</h2>
     
 <script type='text/javascript' src='FLIR.webpss-3.1.2.81.min.js'></script>
     <script type="text/javascript">
@@ -53,7 +53,7 @@
                     <div ng-if="inLogInProccess" class="page-spinner-container">
                         <div class="f-spinner"></div>
                     </div>
-                    <!--div ng-if="!inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}"-->
+                    <div ng-if="!inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}">
                     <div>
                         <div class="env-banner" ng-if="showEnv" ng-cloak>{{env | uppercase}}</div>
                         <div ui-view="login-view" ng-show="isLoginPage()"></div>
