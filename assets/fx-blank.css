@@ -4,6 +4,7 @@ div#supportMainbar {width: 80%; height: 80%;}
 div#bodyContainer {width: 300px; height: 400px;}
 div.form-error.text-left {height: 80%; width: 70%;}
 */
+.col-md-8.col-sm-12.text-center{height:500px;}
 .col-sm-offset-3.col-sm-6.col-xs-12.login-inputs-container{height:440px;}
 /*.md-default-theme, html, body.md-default-theme, body { width:auto; height:80%;}*/
 .row.login-component-container{height:360px;}
