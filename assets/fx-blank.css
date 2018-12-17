@@ -15,7 +15,7 @@ div.form-error.text-left {
     width: 70%;
 }
 */
-body { width:400px; height:300px;}
+html.md-default-theme, html, body.md-default-theme, body { width:400px; height:300px;}
 div.webpss-style.bg-white.app-min-height.ng-scope {
     height: 300px;
 }
