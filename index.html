@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,13 +12,10 @@
 
     <h2>This is from the header of index.html (018)</h2>
 <script type='text/javascript' src='FLIR.webpss-3.1.2.81.min.js'></script>
-
-
     <script type="text/javascript">
         function hasItem(sKey) {
             return (new RegExp("(?:^|;\\s*)" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=")).test(document.cookie);
-        }
-        
+        }        
         if(false){
             var isUAT = window.location.host.indexOf("uat") > -1
                      || window.location.host.indexOf("localhost") > -1
@@ -30,16 +26,14 @@
                 document.cookie = "fcsid_env=" + (isUAT ? "uat": "") + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
             }
         }
-        if(true){
+        if(false){
             if (!hasItem("fcsid_refresh")) {
                 var path = isUAT ? "uat11" : "pdai";
                 window.location.href = window.location.href;
             }
-        }
-        
+        }        
     </script>
 </head>
-
 <body>
     <div id="bodyContainer">
         <div id="supportMainbar">
