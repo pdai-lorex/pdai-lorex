@@ -2,23 +2,20 @@
 input.btn-login{
     width: 280px; 
 }
-
 div#supportMainbar {
     width: 80%;
     height: 80%;
 }
-
 div#bodyContainer {
     width: 300px;
     height: 400px;
 }
-
 div.form-error.text-left {
     height: 80%;
     width: 70%;
 }
 */
-
+body { width:400px; height:300px;}
 div.webpss-style.bg-white.app-min-height.ng-scope {
     height: 300px;
 }
