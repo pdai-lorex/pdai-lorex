@@ -10,7 +10,7 @@
     <!-- <link rel="stylesheet" href="//pdai-lorex.github.io/flircss/fx-blank.css" type="text/css" /> -->
     <link rel="stylesheet" href="./assets/myBlank.css" type="text/css" />
 
-    <h2>This is from the header of index.html (026)</h2>
+    <h2>This is from the header of index.html (027)</h2>
     
 <script type='text/javascript' src='FLIR.webpss-3.1.2.81.min.js'></script>
     <script type="text/javascript">
@@ -29,11 +29,12 @@
         }
         
         console.log("path:",isUAT);
+        console.log("path:",isUAT ? "uat11" : "pdai";);
         if(false){
             if (!hasItem("fcsid_refresh")) {
                 var path = isUAT ? "uat11" : "pdai";
                 console.log("path:",path);
-                window.location.href = window.location.href+"-path-"+path;
+                window.location.href = window.location.href;
             }
         }        
     </script>
