@@ -16,6 +16,7 @@ div.form-error.text-left {
 }
 */
 /*.md-default-theme, html, body.md-default-theme, body { width:auto; height:80%;}*/
+.row.login-component-container{height:360px}
 .spinner-container {height:200px;}
 html.md-default-theme, html, body.md-default-theme, body { width:auto; height:80%;}
 .ng-scope { height: 400px;}
