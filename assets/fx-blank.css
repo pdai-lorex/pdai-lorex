@@ -18,6 +18,10 @@ div.form-error.text-left {
     width: 70%;
 }
 */
+
+div.webpss-style.bg-white.app-min-height.ng-scope {
+    height: 400px;
+}
 div.col-xs-12.login-inputs-container,.ng-scope {
     width: 80%;
     padding: 2px 2px;
