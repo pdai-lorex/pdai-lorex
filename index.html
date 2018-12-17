@@ -24,7 +24,8 @@
             var isUAT = window.location.host.indexOf("uat") > -1
                      || window.location.host.indexOf("localhost") > -1
                      || window.location.host.indexOf("int-web") > -1;
-
+        }
+        if(false){
             if (!hasItem("fcsid_env")) {
                 document.cookie = "fcsid_env=" + (isUAT ? "uat": "") + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
             }
