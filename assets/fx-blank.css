@@ -15,8 +15,9 @@ div.form-error.text-left {
     width: 70%;
 }
 */
+.col-sm-offset-3.col-sm-6.col-xs-12.login-inputs-container{height:440px;}
 /*.md-default-theme, html, body.md-default-theme, body { width:auto; height:80%;}*/
-.row.login-component-container{height:360px}
+.row.login-component-container{height:360px;}
 .spinner-container {height:200px;}
 html.md-default-theme, html, body.md-default-theme, body { width:auto; height:80%;}
 .ng-scope { height: 400px;}
