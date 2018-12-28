@@ -42,9 +42,11 @@
                 <script type="text/javascript" src="//d3oi53q9kbajtk.cloudfront.net/jwplayer7/jwplayer.js"></script>
                 <script type="text/javascript">jwplayer.key = "ur9KY+qrtUYGWRszk8OrYnW0iTCIVMPeH+CH358ucBI=";</script>
                 <div ng-app="FLIR.webpss" ng-controller="AppCtrl" class="webpss-style bg-white app-min-height" ng-strict-di>
+                    <div>(!inLogInProccess-1):{{!inLogInProccess}}</div>
                     <div ng-if="!inLogInProccess" class="page-spinner-container">
                         <div class="f-spinner"></div>
                     </div>
+                    <div>(inLogInProccess-2):{{inLogInProccess}}</div>
                     <div ng-if="inLogInProccess" class="container-fluid no-padding use_available_height app-min-size" ng-class="{'login-page' : isLoginPage()}" ng-style="{'overflow': 'inherit'}">
                         <div class="env-banner" ng-if="showEnv" ng-cloak>{{env | uppercase}}</div>
                         <div ui-view="login-view" ng-show="isLoginPage()"></div>
